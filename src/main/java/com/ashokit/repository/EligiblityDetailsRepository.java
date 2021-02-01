@@ -6,6 +6,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.ashokit.entity.EligibliltyDetails;
 
-public interface EligiblityDetails extends JpaRepository<EligibliltyDetails, Serializable> {
+public interface EligiblityDetailsRepository extends JpaRepository<EligibliltyDetails, Serializable> {
 
 }
