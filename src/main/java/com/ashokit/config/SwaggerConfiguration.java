@@ -30,7 +30,7 @@ public class SwaggerConfiguration {
 				.groupName("batch api")
 				.apiInfo(crateApiInfo())
 				.select()
-				.apis(RequestHandlerSelectors.basePackage("com.ashoikt"))
+				.apis(RequestHandlerSelectors.basePackage("com.ashokit"))
 				.paths(PathSelectors.any())
 				.build();
 	}

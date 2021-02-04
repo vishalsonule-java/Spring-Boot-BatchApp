@@ -2,6 +2,7 @@ package com.ashokit.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -14,6 +15,7 @@ public class BatchSummaryDetails {
 
 	@Id
 	@Column(name="SUMMARY_ID")
+	@GeneratedValue
 	private Integer summaryId;
 	
 	@Column(name="BATCH_NAME")

@@ -5,6 +5,7 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -20,28 +21,29 @@ public class EligibliltyDetails implements Serializable {
 	
 	@Id
 	@Column(name="ED_TRACE_ID")
+	@GeneratedValue
 	private Integer edTraceId;
 	
 	@Column(name="BENEFIT_AMT")
-	private Double benefitAmt;
+	private String benefitAmt;
 	
 	@Column(name="CASE_NUM")
 	private Integer caseNum;
 	
 	@Column(name="CREATE_DT")
-	private Date createDate;
+	private String createDate;
 	
 	@Column(name="UPDATE_DT")
-	private Date updateDate;
+	private String updateDate;
 	
-	@Column(name="DENAIL_REASON")
+	@Column(name="DENIAL_REASON")
 	private String denailReason;
 	
 	@Column(name="PLAN_START_DT")
-	private Date planStartDate;
+	private String planStartDate;
 	
 	@Column(name="PLAN_END_DT")
-	private Date planEndDate;
+	private String planEndDate;
 	
 	@Column(name="PLAN_NAME")
 	private String planName;

@@ -5,6 +5,7 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -13,13 +14,14 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name="CO_TRIGGERS")
-public class CoTriggers implements Serializable {
+public class CoTrigger implements Serializable {
 
 	
 	private static final long serialVersionUID = -3128624627092122258L;
 	
 	@Column(name="TRG_ID")
 	@Id
+	@GeneratedValue
 	private Integer trgId;
 	
 	@Column(name="CASE_NUM")

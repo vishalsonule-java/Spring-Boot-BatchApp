@@ -8,4 +8,6 @@ import com.ashokit.entity.EligibliltyDetails;
 
 public interface EligiblityDetailsRepository extends JpaRepository<EligibliltyDetails, Serializable> {
 
+	
+	public EligibliltyDetails findBycaseNum(Integer caseNum);
 }
